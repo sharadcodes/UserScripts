@@ -1,11 +1,16 @@
 // ==UserScript==
-// @name        JLN Grid Generator
-// @namespace   https://sharadcodes.github.io
-// @match       https://www.justlightnovels.com/custom/grid
-// @version     1.0
-// @author      sharadcodes
-// @license     MIT
-// @description Generates grid view for the page. You need to add the the css file to Stylus extension as well.
+// @name                JLN Grid Generator
+// @author              sharadcodes
+// @namespace           https://sharadcodes.github.io
+// @match               https://www.justlightnovels.com/custom/grid
+// @version             1.0
+// @description         Generates grid view for the page. You need to add the the css file to Stylus extension as well.
+// @compatible          chrome
+// @compatible          firefox
+// @compatible          edge
+// @supportURL          https://github.com/sharadcodes/UserScripts/issues
+// @grant               none
+// @license             MIT
 // ==/UserScript==
 
 let number = 0;
