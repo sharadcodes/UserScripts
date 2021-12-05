@@ -65,7 +65,6 @@
           href: a.href
         })
       })
-      anchors = _.orderBy(anchors, ['index'],['asc']);
       
       anchors.forEach(anchor=> {
         console.log(anchor.href)
@@ -83,7 +82,7 @@
             console.log(counter)
             counter += 1;
             if(counter === anchors.length){
-              a_seasons = _.orderBy(a_seasons, ['title'],['asc']);
+              a_seasons.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
               let tmp_html = ''
               a_seasons.forEach(s=>{
                 tmp_html += s.html
