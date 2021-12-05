@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Gogoanime New UI
-// @version      0.2.0
+// @version      1.0.0
 // @namespace    https://sharadcodes.github.io
 // @author       sharadcodes
 // @license      MIT
