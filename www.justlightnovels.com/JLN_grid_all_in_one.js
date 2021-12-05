@@ -3,13 +3,13 @@
 // @author              sharadcodes
 // @namespace           https://sharadcodes.github.io
 // @match               https://www.justlightnovels.com/custom/grid
-// @version             1.0
+// @version             1.0.1
 // @description         Generates grid view for the page. You need to add the the css file to Stylus extension as well.
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
 // @supportURL          https://github.com/sharadcodes/UserScripts/issues
-// @grant               none
+// @grant               GM_xmlhttpRequest
 // @license             MIT
 // ==/UserScript==
 
@@ -85,6 +85,15 @@ const loadPage = async () => {
 
 window.onload = () => {
   document.querySelector('html').innerHTML = '<body><main id="main"/></main></body>';
+  GM_xmlhttpRequest({
+    method: 'GET',
+    url: 'https://sharadcodes.github.io/UserScripts/www.justlightnovels.com/JLN_grid.css' + '?time=' + Date.now(),
+    onload: function(response) {
+      var style = document.createElement('style');
+      style.textContent = response.responseText;
+      document.head.appendChild(style);
+    }
+  });
   loadPage();
   loadPage();
   window.addEventListener('scroll', () => {
