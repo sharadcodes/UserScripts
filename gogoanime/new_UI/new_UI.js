@@ -1,6 +1,6 @@
 (function () {
   addCustomStyle(
-    "#wrapper,#wrapper_inside{margin:0!important !important;width:100%!important}.items{display:grid!important;grid-template-columns:repeat(auto-fill, minmax(130px, 1fr))!important;gap:1rem!important}.items .img,.items li{width:100%!important}ul.items li p.name{line-height:16px!important;height:auto!important;overflow:auto!important}.content_left{width:100%!important}.content_right{display:none!important;visibility:hidden!important}.dub_tag{display:flex;justify-content:center;align-items:center;position:absolute;top:0;right:0;background:rgba(0,0,0,0.8);border-radius:0 0 0 10px;padding:5px 5px 2px 8px}"
+    "#wrapper,#wrapper_inside{margin:0!important !important;width:100%!important}.items{display:grid!important;grid-template-columns:repeat(auto-fill, minmax(130px, 1fr))!important;gap:1rem!important}.items .img,.items li{width:100%!important}ul.items li p.name{line-height:16px!important;height:auto!important;overflow:auto!important}.content_left{width:100%!important}.content_right{display:none!important;visibility:hidden!important}.dub_tag{display:flex;justify-content:center;align-items:center;position:absolute;top:0;right:0;background:rgba(0,0,0,0.8);border-radius:0 0 0 10px;padding:5px 5px 2px 8px} #load_anime > div { width: 85%; }"
   );
 
   if (window.location.href.toLowerCase().includes("new-season")) {
