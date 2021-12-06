@@ -73,9 +73,7 @@ article:hover {
 	background-color: var(--text-lighter);
 	color: var(--secondary-lighter);
 }
-article:hover a,
 article:hover div {
-	color: var(--secondary-lighter);
 	filter: brightness(100%);
 }
 .series-cover {
