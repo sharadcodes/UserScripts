@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         JustLightNovels New UI
-// @version      2.0.0
+// @version      2.0.1
 // @namespace    https://sharadcodes.github.io
 // @author       sharadcodes
 // @license      MIT
@@ -32,12 +32,15 @@
 // SOFTWARE.
 
 let number = 0;
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 const generateGrid = (entry) => {
   const article = document.createElement('article');
   article.innerHTML = `<div class='series-cover' style='background-image: url(${entry.image});'></div>
                             <div class='series-title-container'>
-                            <h4><a href='${entry.href}' target='_blank'>${entry.title}</a></h4>
+                              <h5>${entry.date.toLocaleDateString('en-us', options)}</h5>
+                              <br/>
+                              <h4><a href='${entry.href}' target='_blank'>${entry.title}</a></h4>
                           </div>`;
   document.querySelector('#main').appendChild(article);
 };
@@ -70,16 +73,17 @@ const getDataForPage = async (url) => {
       const { href } = article.querySelectorAll('a')[0];
       const title = article.querySelectorAll('h2')[0].innerText;
       const images = article.querySelectorAll('img');
+      const date = new Date(article.querySelector('span.date').innerText);
       if (images.length === 0 || !images) {
         tryAndGetImageFromPage(href).then((pimg) => {
           if (pimg !== null) {
-            generateGrid({ title, href, image: pimg });
+            generateGrid({ title, href, date, image: pimg });
           } else {
-            generateGrid({ title, href, image: '' });
+            generateGrid({ title, href, date, image: '' });
           }
         });
       } else {
-        generateGrid({ title, href, image: images[0].src });
+        generateGrid({ title, href, date, image: images[0].src });
       }
     });
   } catch (err) {
