@@ -61,16 +61,21 @@ main {
 article {
 	box-shadow: 0 8px 24px 0 rgb(0 0 0 / 24%);
 	font-size: 0.8rem;
-	border: 1px solid transparent;
+	border: none;
+	transition: all 0.2s ease-in-out	
 	border-radius: 5px;
 	background-color: var(--secondary-lighter);
 }
 article * {
 	transition: all 0.2s ease-in-out;
 }
+article:hover {
+	background-color: var(--text-lighter);
+	color: var(--secondary-lighter);
+}
 article:hover a,
 article:hover div {
-	color: #87FFFF;
+	color: var(--secondary-lighter);
 	filter: brightness(100%);
 }
 .series-cover {
