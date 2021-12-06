@@ -1,5 +1,5 @@
 
-# Userscripts
+# UserScripts
 
 This Repo contains all the userscripts that I create & modify (-.-)
 
