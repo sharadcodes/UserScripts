@@ -1,3 +1,25 @@
+// MIT License
+
+// Copyright (c) 2021 Sharad Raj Singh Maurya
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 (function () {
   addCustomStyle(
     "#wrapper,#wrapper_inside{margin:0!important !important;width:100%!important}.items{display:grid!important;grid-template-columns:repeat(auto-fill, minmax(130px, 1fr))!important;gap:1rem!important}.items .img,.items li{width:100%!important}ul.items li p.name{line-height:16px!important;height:auto!important;overflow:auto!important}.content_left{width:100%!important}.content_right{display:none!important;visibility:hidden!important}.dub_tag{display:flex;justify-content:center;align-items:center;position:absolute;top:0;right:0;background:rgba(0,0,0,0.8);border-radius:0 0 0 10px;padding:5px 5px 2px 8px} #load_anime > div { width: 85%; }"
