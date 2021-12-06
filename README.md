@@ -3,7 +3,7 @@
 
 This Repo contains all the userscripts that I create & modify (-.-)
 
-![LICENSE MIT](https://img.shields.io/github/license/sharadcodes/Userscripts?style=for-the-badge)
+[![LICENSE MIT](https://img.shields.io/github/license/sharadcodes/Userscripts?style=for-the-badge)](https://github.com/sharadcodes/UserScripts/blob/main/LICENSE)
 
 ## 🔗 Links
 
